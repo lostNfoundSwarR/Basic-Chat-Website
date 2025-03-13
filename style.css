@@ -1,0 +1,1132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+     text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+     width: 0px;
+}
+
+body a {
+     color: #000;
+     cursor: pointer;
+}
+
+body li {
+     list-style: none;
+}
+
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: #e7dfdfb1;
+     overflow: auto;
+}
+
+body i {
+     text-align: center;
+}
+
+body center {
+     margin-top: 20px;
+     font-size: 20px;
+     font-weight: 500;
+}
+
+body button.main {
+     display: block;
+}
+
+body button.hidden {
+     display: none;
+}
+
+/* External elements CSS code (settings) */
+body .external-btn-container {
+     display: flex;
+     gap: 10px;
+     align-self: flex-start;
+     position: absolute;
+     right: 87%;
+     margin-top: 10px;
+}
+
+body .external-btn, .internal-btn {
+     font-size: 30px;
+     width: 60px;
+     height: 60px;
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     background-color: #fff;
+     position: relative;
+     transition: 0.3s ease-in-out;
+}
+
+body .external-btn:hover, .internal-btn:hover {
+     transform: translateY(5px);
+}
+
+body .option-container {
+     align-self: flex-start;
+     margin-top: 100px;
+     width: fit-content;
+     display: flex;
+     position: absolute;
+     right: 80%;
+     top: -5%;
+     display: none;
+}
+
+body .option-container .option-list {
+     font-size: 20px;
+     padding: 15px;
+     background-color: #fff;
+     border-radius: 0px 10px 10px 10px;
+     font-weight: 500; 
+}
+
+body .option-container .option-list .option {
+     padding: 10px;
+     background-color: #ffeeee;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+}
+
+body .option-container .option-list .option:hover {
+     background-color: #efdada;
+}
+
+/* Sign-Up & Login form CSS code */
+.container {
+     position: relative;
+     width: 968px;
+     max-width: 100%;
+     min-height: 620px;
+     overflow: hidden;
+     background-color: #fff;
+     border-radius: 10px;
+}
+
+.container .form-container .form {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     background-color: #fff;
+     gap: 5px;
+}
+
+.container .form-container {
+     position: absolute;
+     top: 0;
+     height: 100%;
+}
+
+.container .form-container .form h1 {
+     font-size: 45px;
+}
+
+.container .form-container .form i{
+     position: relative;
+     font-size: 24px;
+     bottom: 50px;
+     left: 40%;
+}
+
+.container .text-field {
+     width: 300px;
+     padding: 15px;
+     border-radius: 5px;
+     font-size: 25px;
+     border: none;
+     outline: none;
+     background-color: rgba(140, 163, 184, 0.457);
+}
+
+.container .form-container .form.signUp .text-field.username {
+     margin-bottom: 25px;
+}
+
+.container .submit-btn {
+     margin-top: 20px;
+     width: 150px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     background-color: #5e5f5f;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     font-size: 25px;
+}
+
+.container .form-container .form .submit-btn:hover {
+     background-color: #6a6a6b;
+}
+
+.container .form-container .form {
+     padding: 20px;
+}
+
+.container .form-container .form a {
+     font-size: 17px;
+     cursor: pointer;
+     color: #000;
+}
+
+.container .form-container .form a:hover {
+     text-decoration: underline;
+}
+
+.container .form-container .form.signUp {
+     transform: translateX(10%);
+     right: 0;
+}
+
+.container .form-container .form.login {
+     transform: translateX(150%);
+     left: 0;
+     opacity: 0;
+}
+
+.container .error-msg {     
+     color: red;
+     margin-top: 5px;
+     font-size: 16px;
+     font-weight: 500;
+     max-width: 300px;
+     text-align: center;
+     word-wrap: break-word;
+}
+
+.container .toggle-container .toggle-box {
+     padding: 10px;
+     color: #fff;
+     text-align: center;
+     background-color: #1c1c24;
+     height: 100%;
+     width: 50%;
+}
+
+.container .toggle-container .toggle-box h2 {
+     margin-top: 200px;
+     font-size: 25px;
+}
+
+.container .toggle-container .toggle-box p {
+     font-size: 20px;
+}
+
+.container .toggle-container .toggle-box button {
+     margin-top: 20px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     background-color: #3f3f44;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     font-size: 20px;
+}
+
+.container .toggle-container .toggle-box.right-toggle {
+     position: absolute;
+     left: 50%;
+     border-radius: 150px 0 0 150px;
+     z-index: 1;
+}
+
+.container .toggle-container .toggle-box.left-toggle {
+     position: absolute;
+     right: 50%;
+     border-radius: 0 150px 150px 0;
+     z-index: -1;
+}
+
+/* move, come and formShow are animations for the forms */
+@keyframes move {
+     from {
+          transform: translateX(10%);
+          opacity: 1;
+     }
+     to {
+          transform: translateX(170%);
+          opacity: 0;
+     }
+}
+
+@keyframes come {
+     from {
+          transform: translateX(170%);
+          opacity: 1;
+     }
+     to {
+          transform: translateX(10%);
+          opacity: 0;
+     } 
+}
+
+@keyframes formShow {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+
+/* disappear and appear are animations for the toggle boxes */
+@keyframes disappear {
+     from {
+          opacity: 1;
+          z-index: 2;
+     }
+     to {
+          opacity: 0;
+          z-index : -1;
+     }
+}
+
+@keyframes appear {
+     from {
+          opacity: 0;
+          z-index: -1;
+     }
+     to {
+          opacity: 1;
+          z-index: 1;
+     }
+}
+
+/* User list page CSS code */
+.container.user-container {
+     width: 550px;
+     height: 680px;
+     max-height: 700px;
+     display: flex;
+     flex-direction: column;
+}
+
+.container .user-info {
+     display: flex;
+     padding: 20px;
+     border-bottom: 1px solid #3f3e3e4d;
+     gap: 30px
+}
+
+.container .user-info .btn-options {
+     display: none;
+}
+
+.container .details {
+     font-weight: 500;
+     display: flex;
+     position: relative;
+}
+
+.container .details.self {
+     flex-direction: column;
+     margin-right: 70px;
+}
+
+.container img {
+     min-width: 45px;
+     min-height: 45px;
+     max-width: 45px;
+     max-height: 45px;
+     border-radius: 50%;
+     margin-top: 15px;
+     cursor: pointer;
+}
+
+.container .user-info .details .info {
+     font-size: 25px;
+     font-weight: 500;
+     width: 180px;
+}
+
+.container .user-info .details .info.status {
+     font-size: 20px;
+}
+
+.container .searchBar {
+     position: relative;
+     top: 10px;
+     height: 65px;
+     align-self: center;
+}
+
+.container .searchBar i {
+     font-size: 20px;
+     position: relative;
+     right: 35px;
+}
+
+.container .searchBar .text-field.search-field {
+     height: 45px;
+}
+
+.container a {
+     font-size: 25px;
+     margin-top: 20px;
+     color: #000;
+}
+
+.container a.user {
+     display: flex;
+     font-size: 20px;
+     padding: 10px;
+     color: #000;
+     border-bottom: 1px solid #dadada;
+     border-radius: 5px;
+}
+
+.container a.user:hover {
+     background-color: #fbf6f6;
+}
+
+.container a.user:last-child {
+     border: none;
+}
+
+.container.user-container .submit-btn {
+     text-align: center;
+     width: 150px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     background-color: #5e5f5f;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     font-size: 25px;
+}
+
+.container .details.other {
+     gap: 20px;
+     width: 100%;
+}
+
+.container .users-list {
+     padding: 20px;
+     max-height: 450px;
+     overflow-y: auto;
+}
+
+.container .users-list .user .details img {
+     margin-bottom: 20px;
+     align-self: center;
+}
+
+.container .users-list .user .details.non-friend img {
+     margin-bottom: 10px;
+}
+
+.container .users-list .user .details .new-info{
+     align-self: center;
+     min-width: 180px;
+}
+
+.container .users-list .user .details .content {
+     align-self: center;
+     display: flex;
+     width: 100%;
+     justify-content: flex-end;
+}
+
+.container .users-list .user .details .content i, form .friend-btn, .cancel-btn {
+     align-self: center;
+     margin-right: 25px;
+}
+
+.container .users-list .user .details .content form .friend-btn, .cancel-btn {
+     max-width : 58px;
+     margin-bottom: 20px;
+}
+
+.container .users-list .user .details i.active {
+     color: #008000;
+}
+
+.container .users-list .user .details i.offline {
+     color: #6e6e6e;
+}
+
+.container .users-list .user .details .new-info {
+     display: flex;
+     flex-direction: column;
+     margin-top: 10px;
+     width: 250px;
+}
+
+.container .users-list .user .details .new-info .last-msg {
+     font-size: 17px;
+     color: #504f4f;
+}
+
+.container.user-container .option-bar {
+     display: flex;
+     gap: 50px;
+     justify-content: center;
+     font-size: 20px;
+     padding: 10px;
+     border-bottom: 1px solid #efcfcf;
+}
+
+.container.user-container .option-bar .option {
+     cursor: pointer;
+     font-weight: 500;
+     color: #873d3d;
+     text-align: center;
+     width: 200px;
+}
+
+.container.user-container .option-bar .option.open {
+     border-bottom: 3px solid #ff0000;
+}
+
+/* Chat area CSS code */
+.container.chat-container .user-info a {
+     font-size: 25px;
+     position: relative;
+     top: 5px;
+}
+
+.container.chat-container .user-info img {
+     position: relative;
+     right: 10px;
+}
+
+.container.chat-container .user-info .details {
+     position: relative;
+     right: 10px;
+}
+
+.container .message-box {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     max-height: 460px;
+     overflow-y: auto;
+}
+
+.container .message-box .message {
+     display: flex;
+     position: relative;
+}
+
+.container .message-box .message.img {
+     height: 250px;
+}
+
+.container .message-box .message.img.incoming-msg {
+     margin-left: 10px;
+}
+
+.container .message-box .message img {
+     position: relative;
+     top: 10px;
+     left: 10px;
+     width: 35px;
+     height: 35px;
+}
+
+.container .message-box .message div {
+     font-size: 20px;
+     padding: 10px;
+}
+
+.container .message-box .message.incoming-msg div {
+     background-color: #cfcfcf;
+     color: #000000;
+     max-width: 270px;
+     width: fit-content;
+     margin-top: 10px;
+     margin-left: 20px;
+     border-radius: 18px 18px 18px 0;
+     word-break: break-all;
+     align-self: flex-start;
+}
+
+.container .message-box .message.outgoing-msg {
+     align-self: flex-end;
+}
+
+.container .message-box .message.outgoing-msg div {
+     background-color: #333;
+     color: #fff;
+     max-width: 270px;
+     width: fit-content;
+     margin-top: 10px;
+     margin-right: 20px;
+     border-radius: 18px 18px 0 18px;
+     word-break: break-all;
+}
+
+.container .message-box .message .msg-img {
+     min-width: 200px;
+     min-height: 200px;
+}
+
+.container .message-box .message.incoming-msg .msg-img {
+     border-radius: 20px 20px 20px 0;
+     margin-left: 40px;
+}
+
+.container .message-box .message.outgoing-msg .msg-img {
+     border-radius: 20px 20px 0 20px;
+     margin-right: 30px;
+}
+
+.container .message-box .message .icon {
+     position: absolute;
+     top: 190px;
+     left: 0;
+}
+
+.container .form.send-msg {
+     padding: 5px;
+     border-top: 1px solid #dbbebe;
+     position: absolute;
+     bottom: 10px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.container .form.send-msg .msg-input label {
+     margin-right: 20px;
+}
+
+.container .form.send-msg .msg-input label i {
+     font-size: 25px;
+}
+
+.container.chat-container .form .msg-input .submit-btn {
+     border-radius: 0 10px 10px 0;
+     text-align: center;
+     width: 65px;
+     height: 60px;
+}
+
+.container.chat-container .form .submit-btn:hover {
+     background-color: #464647;
+}
+
+.container.chat-container .form .text-field {
+     font-size: 20px;
+     align-items: center;
+}
+
+/* Requests Page CSS code */  
+.container.requests-container {
+     width: 600px;
+     padding: 10px;
+}
+
+.container .page-info {
+     text-align: center;
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 10px;
+     padding: 10px;
+     border-bottom: 1px solid #ddc7c7cf;
+     position: relative;
+}
+
+.container .page-info a {
+     position: absolute;
+     left: 15px;
+     font-size: 30px;
+     bottom: 15px;
+     cursor: pointer;
+}
+
+.container .requests-list {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     overflow-y: auto;
+}
+
+.container .requests-list .request {
+     display: flex;
+     padding: 10px;
+     width: 580px;
+     justify-content: space-between;
+     border-bottom: 1px solid #d6cfcf;
+     cursor: pointer;
+     border-radius: 5px;
+}
+
+.container .requests-list .request:last-child {
+     border: none;
+}
+
+.container .requests-list .request:hover {
+     background: #ffeeee;
+}
+
+.container .requests-list .request .details {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+.container .requests-list .request .details .request-name {
+     font-size: 20px;
+     margin-top: 15px;
+}
+
+.container .requests-list .request .submit-btn {
+     margin-bottom: 10px;
+     position: relative;
+}
+
+.container .requests-list .request .submit-btn.deny-request {
+     width: fit-content;
+}
+
+.container .requests-list .request .submit-btn.accept-request {
+     width: fit-content;
+}
+
+/* Settings page CSS code */
+.container.settings-container {
+     display: flex;
+     justify-content: space-between;
+     max-height: 650px;
+     gap: 20px;
+}
+
+.container .nav-bar {
+     width: 300px;
+     height: 650px;
+     position: relative;
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     background-color: #dddddd;
+}
+
+.container .nav-bar a.back-icon {
+     position: absolute;
+     top: 0;
+     left: 20px;
+     font-size: 30px;
+}
+
+.container .nav-bar .nav-list {
+     display: flex;
+     flex-direction: column;
+     margin-left: 20px;
+     gap: 10px;
+}
+
+.container .nav-bar .nav-list .options {
+     padding: 20px;
+     background-color: #c7c7c7;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+}
+
+.container .nav-bar .nav-list .options.active {
+     background-color: #aaa9a9;
+}
+
+.container .nav-bar .nav-list .options:not(.active):hover {
+     background-color: #bab9b9;
+}
+
+.container .main-content {
+     padding: 0 30px 30px 0;
+     position: relative;
+     min-height: 100%;
+     width: 65%;
+     overflow-y: auto;
+}
+
+.container header {
+     font-size: 22px;
+}
+
+/* Profile Settings CSS code */
+.container .profile-content .details {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     flex-direction: column;
+     margin-left: 30px;
+}
+
+.container .profile-content .details .sec-icon {
+     display: none;
+}
+
+.container .profile-content .details img {
+     max-width: 200px;
+     max-height: 200px;
+     border: 5px solid #acacac;
+}
+
+.container .profile-content .details img.active {
+     position: absolute;
+     top: 0;
+}
+
+.container .profile-content .details img.active:hover {
+     opacity: 0.5;
+     transition: 0.3s ease-in-out;
+}
+
+.container .profile-content .info {
+     font-size: 30px;
+     margin-left: 20px;
+}
+
+.container .credentials-details .info.credentials-info {
+     font-size: 20px;
+     display: flex;
+     gap: 40px;
+}
+
+.container .appearance-box {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-left: 35px;
+}
+
+.container .appearance-box .theme-options .theme {
+     font-size: 20px;
+     font-weight: 500;
+     margin-left: 20px;
+}
+
+.container .appearance-box .theme-options input[type="radio"] {
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+}
+
+.container .logout-form .submit-btn.logout-btn {
+     margin-left: 35px;
+}
+
+/* Chat-settings CSS code */
+.container .chats-content {
+     padding-top: 20px;
+}
+
+/* Delete Account CSS code */
+.container .delete-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+/* "Change Profile Picture" page CSS code */
+.container.change-pic-container {
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.container.change-pic-container .main-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-self: center;
+}
+
+.container.change-pic-container a {
+     font-size: 30px;
+     margin-left: 20px;
+     align-self: flex-start;
+}
+
+.container.change-pic-container .main-content .image-container img {
+     border: 5px solid #000;
+     margin-top: 10px;
+     min-width: 250px;
+     min-height: 250px;
+}
+
+.container.change-pic-container .main-content form {
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+.container .cover-btn .file-chooser {
+     position: absolute;
+     width: 100px;
+     z-index: 2;
+     visibility: hidden;
+}
+
+.container .cover-btn {
+     color: #fff;
+     cursor: pointer;
+     width: 175px;
+     padding: 10px;
+     font-size: 20px;
+     border: 2px solid #5b5b5b;
+     user-select: none;
+     border-radius: 5px;
+     background-color: #3e5452;
+}
+
+.container.change-pic-container .main-content form .file-name {
+     font-size: 18px;
+     font-style: italic;
+}
+
+.container.change-pic-container .main-content form .error-msg {
+     font-size: 18px;
+}
+
+/*Media queries*/
+@media (max-width: 1000px) {
+     .external-btn-container {
+          position: relative;
+          left: 1%;
+     }
+
+     .external-btn {
+          min-width: 60px;
+     }
+}
+
+@media (max-width: 840px) {
+     .external-btn-container {
+          flex-direction: column;
+     }
+
+     .container .form-container .form.login {
+          transform: translateX(130%);
+     }
+}
+
+@media (max-width: 770px) {
+     .container .form-container .form.login {
+          transform: translateX(110%);
+     }  
+}
+
+@media (max-width: 693px) {
+     .container.registration-container {
+          transform: scale(0.87);
+     }
+}
+
+@media (max-width: 692px) {
+     body .external-btn-container {
+          display: none;
+     }
+
+     .container .requests-list .request .submit-btn {
+          right: 40px;
+     }
+
+     .container .user-info .btn-options {
+          display: flex;
+          gap: 10px;
+     }
+}
+
+@media (max-width: 549px) {
+     .container .requests-list .request .submit-btn {
+          right: 80px;
+     }
+}
+
+@media (max-width: 509px) {
+     .container {
+          transform: scale(0.8);
+     }
+
+     .container * {
+          transform: scale(0.96);
+     }
+
+     .container .requests-list .request .submit-btn {
+          right: 150px;
+     }
+
+     .btn-options {
+          position: relative;
+          right: 100px;
+     }
+
+     .details .info .title {
+          display: none;
+     }
+
+     .details .info .sec-icon {
+          display: inline;
+     }
+}
+
+@media (max-width: 438px) {
+     .container .requests-list .request .submit-btn {
+          right: 190px;
+     }
+}
+
+@media (max-width: 395px) {
+     .container {
+          transform: scale(0.78);
+     }
+
+     .container * {
+          transform: scale(0.93);
+     }
+
+     .container .requests-list .request .submit-btn {
+          right: 230px;
+     }
+
+     .container .searchBar i {
+          right: 40px;
+     }
+
+     .container .user-info {
+          gap: 20px;
+     }
+}
+
+@media (max-width: 368px) {
+     .container .user-info {
+          gap: 10px;
+     }
+
+     .container .requests-list .request .submit-btn {
+          transform: scale(0.8);
+     }
+
+     .container .searchBar i {
+          right: 50px;
+     }
+}
+
+@media (max-width: 349px) {
+     .container {
+          transform: scale(0.74);
+     }
+
+     .container * {
+          transform: scale(0.85)
+     }
+
+     .container .requests-list .request .submit-btn {
+          right: 270px;
+     }
+
+     .container .user-info {
+          gap: 7px;
+     }
+}
+
+@media (max-width: 329px) {
+     .container {
+          transform: translateY(150px);
+          min-height: 10px;
+     }
+
+     .container.requests-container {
+          transform: translateY(10px);
+     }
+
+     .container * {
+          transform: scale(0.88);
+     }
+
+     .container .requests-list .request .submit-btn {
+          transform: scale(0.85);
+     }
+
+     .container .searchBar i {
+          right: 50px;
+     }
+
+     .container .user-info {
+          gap: 2px;
+     }
+}
+
+/* Settings media queries */
+@media (max-width: 738px) {
+     .container.settings-container .profile-content * {
+          transform: scale(0.88);
+     }
+}
+
+@media (max-width: 654px) {
+     .details.credentials-details {
+          position: relative;
+          right: 30px;
+     }
+}
+
+@media (max-width: 602px) {
+     .details.credentials-details * {
+          font-size: 18px;
+     }
+}
+
+@media (max-width: 575px) {
+     .details.credentials-details {
+          position: relative;
+          right: 70px;
+     }
+}
+
+@media (max-width: 484px) {
+     .container .details.credentials-details {
+          display: none;
+     }
+
+     .container .profile-content .details img.active {
+          position: relative;
+     }
+
+     .settings-container .details .icon {
+          display: none;
+     }
+}
+
+/* Chat area media queries */
+@media (max-width: 452px) {
+     .container .form.send-msg {
+          padding: 0;
+     }
+
+     .container .form.send-msg .msg-input label  {
+          margin-right: 0px;
+     }
+}
+
+@media (max-width: 421px) {
+     .container .form.send-msg .text-field {
+          width: 200px;
+     }
+}

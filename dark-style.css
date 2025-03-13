@@ -1,0 +1,102 @@
+/* Dark body CSS code */
+body.dark * {
+     color: #fff;
+}
+
+body.dark {
+     background-color: #252525;
+}
+
+/* Dark external elements CSS code */
+body.dark .external-btn-container .external-btn, .internal-btn {
+     background-color: #4a4a4a;
+     color: #fff;
+}
+
+body.dark .option-container .option-list {
+     background-color: #665454;
+}
+
+body.dark .option-container .option-list .option {
+     background-color: #4c4c4c;
+}
+
+body.dark .option-container .option-list .option:hover {
+     background-color: #3c3c3c;
+}
+
+body.dark .option-container .option-list .option a {
+     color: #fff;
+}
+
+/* Dark main container CSS code (include all) */
+body.dark .container {
+     background-color: #3b3939;
+     color: #fff;
+}
+
+body.dark .container .user-info {
+     border-bottom: 1px solid #fff;
+}
+
+body.dark .container input {
+     color: #fff;
+}
+
+body.dark .container input::placeholder {
+     color: #fff;
+}
+
+
+body.dark .container .option-bar .option {
+     color: #dfdede;
+}
+
+body.dark .container .option-bar .option.open {
+     border-bottom: 2px solid #bdbdbd;
+}
+
+body.dark .container .users-list .user {
+     border-bottom: 1px solid #fff;
+}
+
+body.dark .container .users-list .user:last-child {
+     border: none;
+}
+
+body.dark .container .users-list .user:hover {
+     background-color: #484848;
+}
+
+body.dark .container .users-list .user .details .new-info .last-msg {
+     color: #c4c0c0;
+}
+
+body.dark .container .requests-list .request:hover {
+     background-color: #544e4e;
+}
+
+body.dark .container .message-box .message.incoming-msg div {
+     color: #fff;
+     background-color: #555151;
+}
+
+body.dark .container .message-box .message.outgoing-msg div {
+     background-color: #2d2d2d;
+}
+
+body.dark .container .nav-bar {
+     background-color: #413e3e;
+}
+
+body.dark .container .nav-bar .nav-list a {
+     background-color: #353232;
+}
+
+body.dark .container .nav-bar .nav-list a.active {
+     background-color: #2a2727;
+}
+
+body.dark .container .nav-bar .nav-list a:not(.active):hover {
+     background-color: #3a2727;
+}
