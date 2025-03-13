@@ -7,23 +7,4 @@ CREATE TABLE users(
      img VARCHAR(255),
      stat VARCHAR(50) NOT NULL
 );
-DELIMITER //
---This trigger will delete the user data from everything when user is deleted
-CREATE TRIGGER user_update
-AFTER DELETE ON users
-FOR EACH ROW
-BEGIN
-     DELETE FROM requests
-     WHERE requests.sender_id = OLD.unique_user_id
-     OR requests.receiver_id = OLD.unique_user_id;
 
-     DELETE FROM messages
-     WHERE messages.outgoing_id = OLD.unique_user_id
-     OR requests.receiver_id = OLD.unique_user_id;
-
-     DELETE FROM archives
-     WHERE archives.unique_user_id = OLD.unique_user_id
-     OR archives.archived_user_id = OLD.unique_user_id;
-END//
-
-DELIMITER ;
