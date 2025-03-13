@@ -21,10 +21,6 @@ BEGIN
      WHERE messages.outgoing_id = OLD.unique_user_id
      OR requests.receiver_id = OLD.unique_user_id;
 
-     DELETE FROM friends
-     WHERE friends.friend_id = OLD.unique_user_id
-     OR friends.unique_id = OLD.unique_user_id;
-
      DELETE FROM archives
      WHERE archives.unique_user_id = OLD.unique_user_id
      OR archives.archived_user_id = OLD.unique_user_id;
