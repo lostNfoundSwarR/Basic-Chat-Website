@@ -48,7 +48,7 @@ setInterval(async () => {
                          cancelBtn.addEventListener("click", () => {
                               let form = cancelBtn.parentElement;
 
-                              Request.sendAJAX(form, "decline-request");
+                              sendAJAX(form, "decline-request");
                          });
                          cancelBtn.setAttribute("data-listener", "true");
                     }
