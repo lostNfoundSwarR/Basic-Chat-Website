@@ -1,4 +1,4 @@
-import {Request} from "../js/modules/request-module.js";
+import sendAJAX from "../js/modules/request-module.js";
 
 let form;
 let acceptBtns;
@@ -37,7 +37,7 @@ setInterval(async () => {
                          addBtn.addEventListener("click", () => {
                               let form = addBtn.parentElement;
 
-                              Request.sendAJAX(form, "accept-request");
+                              sendAJAX(form, "accept-request");
                          });
                          addBtn.setAttribute("data-listener", "true");
                     }
