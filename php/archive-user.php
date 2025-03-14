@@ -12,12 +12,13 @@ $unique_user_id = $_SESSION["unique_id"];
 
 $sql_query = "SELECT unique_user_id FROM users WHERE username = ?
               AND unique_user_id != ? AND
-              unique_user_id IN
-              (SELECT friend_id FROM friends WHERE unique_id = ?)";
+              (unique_user_id IN
+              (SELECT friend_id FROM friends WHERE unique_id = ?) OR
+              unique_user_id IN (SELECT unique_id FROM friends WHERE friend_id = ?))";
 
 try {
      $stmt = $conn->prepare($sql_query);
-     $stmt->bind_param("sii", $username, $unique_user_id, $unique_user_id);
+     $stmt->bind_param("siiii", $username, $unique_user_id, $unique_user_id, $unique_user_id, $unique_user_id);
      $stmt->execute();
 
      $result = $stmt->get_result();
@@ -30,7 +31,7 @@ try {
                         WHERE unique_user_id = ? AND archived_unique_id = ?";
 
           $stmt = $conn->prepare($sql_query);
-          $stmt->bind_param("ii",$unique_user_id, $row["unique_user_id"]);
+          $stmt->bind_param("iiii",$unique_user_id, $row["unique_user_id"]);
           $stmt->execute();
 
           $result = $stmt->get_result();
