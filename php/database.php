@@ -1,9 +1,9 @@
 <?php
 // Enter your database details
-$hostname = "localhost"; //Default: localhost
-$password = "tender_feeling"; //If not set, leave empty
-$username = "root"; //Default; root
-$database = "chatDataBase"; //Enter your database name
+$hostname = ""; //Default: localhost
+$password = ""; //If not set, leave empty
+$username = ""; //Default; root
+$database = ""; //Enter your database name
 
 try {
      $conn = mysqli_connect($hostname, $username, $password, $database);
