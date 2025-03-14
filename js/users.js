@@ -1,4 +1,4 @@
-import {Request} from "../js/modules/request-module.js";
+import sendAJAX from "../js/modules/request-module.js";
 
 const userImg = document.getElementById("user-img");
 const userList = document.querySelector(".users-list");
@@ -178,7 +178,7 @@ setInterval(async () => {
                               addBtn.addEventListener("click", () => {
                                    let form = addBtn.parentElement;
 
-                                   Request.sendAJAX(form, "send-request");
+                                   sendAJAX(form, "send-request");
                               });
                               addBtn.setAttribute("data-listener", "true");
                          }
@@ -189,7 +189,7 @@ setInterval(async () => {
                               cancelBtn.addEventListener("click", () => {
                                    let form = cancelBtn.parentElement;
 
-                                   Request.sendAJAX(form, "cancel-request");
+                                   sendAJAX(form, "cancel-request");
                               });
                               cancelBtn.setAttribute("data-listener", "true");
                          }
