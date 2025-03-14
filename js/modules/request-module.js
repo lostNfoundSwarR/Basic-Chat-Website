@@ -1,4 +1,5 @@
 // It handles requests
+// NOTE: Its not applicable for all requests
 export async sendAJAX(form, fileName) {
      let formData = new FormData(form);
 
